@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>我的第一份表單</title>
+
+</head>
+<body>
+
+<h1>我的第一份表單</h1>
+
+<a href="https://zh.wikipedia.org/zh-tw/%E6%9B%BC%E5%BE%B7%E6%8B%89%E6%95%88%E6%87%89"><img src="image/youarenotalone.png" height="200" width="150"/></a>
+
+<form action="table_gen.php" method="get">
+    <fieldset>
+        <legend>填表人資訊</legend>
+        性別:<input type="radio" name="gender" value="M">男生
+    <input type="radio" name="gender" value="G">女生
+    <input type="radio" name="gender" value="O">其他
+    <input type="radio" name="gender" value="F" checked>偽人<br/>
+    科系:<select name="dept">
+        <option value="ee">電機工程系</option>
+        <option value="csie" selected>資訊網路工程系</option>
+        <option value="me">機械工程系</option>
+    </select><br/>
+    <textarea name="message" rows="5" cols="25">寫上自己的留言</textarea>
+    </fieldset>
+    <fieldset>
+        <legend>表格參數</legend>
+        輸入帳號:<input type="text" name="row_num" value="5"/><br/>
+        輸入密碼:<input type="text" name="col_num" value="4"/><br/>
+        <input type="submit" value="繳交"/>
+        <input type="reset"  value="重新輸入"/> 
+    </fieldset>
+</form>
+ 
+<footer>
+    <p>&copy; 2024 林杰儀. 版權所有</p>
+</footer>
+    
+
+</body>
+</html>
